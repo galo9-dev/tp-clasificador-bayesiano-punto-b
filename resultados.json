@@ -1,0 +1,120 @@
+{
+  "n_total": 20,
+  "n_train": 14,
+  "n_test": 6,
+  "accuracy": 1.0,
+  "reporte": {
+    "grooming": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "no grooming": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 6.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 6.0
+    }
+  },
+  "matriz": [
+    [
+      3,
+      0
+    ],
+    [
+      0,
+      3
+    ]
+  ],
+  "clases": [
+    "grooming",
+    "no grooming"
+  ],
+  "test": [
+    {
+      "mensaje": "No hace falta que le digas a nadie que hablamos tanto.",
+      "real": "grooming",
+      "pred": "grooming"
+    },
+    {
+      "mensaje": "¿Tenés ganas de salir a andar en bici mañana?",
+      "real": "no grooming",
+      "pred": "no grooming"
+    },
+    {
+      "mensaje": "Mandame una foto tuya, pero que nadie más la vea.",
+      "real": "grooming",
+      "pred": "grooming"
+    },
+    {
+      "mensaje": "¿Podés mostrarme cómo estás vestida ahora?",
+      "real": "grooming",
+      "pred": "grooming"
+    },
+    {
+      "mensaje": "¿Cómo te fue en el examen de historia?",
+      "real": "no grooming",
+      "pred": "no grooming"
+    },
+    {
+      "mensaje": "¿Querés hacer una videollamada para estudiar juntos?",
+      "real": "no grooming",
+      "pred": "no grooming"
+    }
+  ],
+  "cv_scores": [
+    1.0,
+    0.5,
+    1.0,
+    0.75,
+    0.75
+  ],
+  "multi": {
+    "media": 0.8758333333333332,
+    "min": 0.5,
+    "max": 1.0,
+    "pct_100": 0.495,
+    "distribucion": {
+      "0.5": 11,
+      "0.67": 26,
+      "0.83": 64,
+      "1.0": 99
+    }
+  },
+  "nuevos": [
+    {
+      "mensaje": "¿Podés mandarme una foto tuya? No se la muestres a nadie.",
+      "pred": "grooming",
+      "p_grooming": 0.9866997773903156
+    },
+    {
+      "mensaje": "¿Jugamos Minecraft esta tarde?",
+      "pred": "no grooming",
+      "p_grooming": 0.034788034681129315
+    },
+    {
+      "mensaje": "No le digas a tus papás que hablamos, ¿sí?",
+      "pred": "grooming",
+      "p_grooming": 0.9990341498964446
+    },
+    {
+      "mensaje": "¿Terminaste el trabajo práctico de historia?",
+      "pred": "no grooming",
+      "p_grooming": 0.02683313746655777
+    }
+  ]
+}
